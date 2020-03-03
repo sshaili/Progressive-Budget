@@ -26,6 +26,8 @@ mongoose.connect("mongodb://username:password1@ds219308.mlab.com:19308/heroku_97
   useUnifiedTopology: true
 });
 // routes here
+app.use(require("./routes/api.js"));
+
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
